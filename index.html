@@ -8,33 +8,24 @@
   <meta name="keywords" content="cursos online, formación, tecnología, diseño, empresa, idiomas, e-learning">
   <meta name="description"
     content="Prototipo web estático de Formación Global Online: plataforma de cursos en distintas áreas del conocimiento.">
-  <meta name="author" content="Nombre Apellidos">
+  <meta name="author" content="Diego Dominguez">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header>
-    <div>
-      <a href="index.html">
-        <img src="./images/logo_ui1.png" alt="Logotipo de Formación Global Online" width="256" height="256">
-      </a>
-      <h1>Formación Global Online</h1>
-      <p>
-        Plataforma de formación en línea con cursos de tecnología, diseño, empresa e idiomas.
-        Este sitio es un prototipo inicial y servirá como base para futuras ampliaciones.
-      </p>
-    </div>
+    <img class="banner" src="./images/banner.png" alt="Banner de Formación Global Online">
 
-    <nav aria-label="Navegación principal">
+    <nav class="top-nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html" aria-current="page">Portada</a></li>
         <li><a href="cursos.html">Cursos</a></li>
         <li><a href="profesorado.html">Profesorado</a></li>
       </ul>
     </nav>
-    <hr>
   </header>
 
-  <main>
+  <main div class="grid-2x2">
     <section aria-labelledby="presentacion">
       <h2 id="presentacion">¿Qué es Formación Global Online?</h2>
 
@@ -57,13 +48,13 @@
       </p>
     </section>
 
-    <hr>
+
 
     <section aria-labelledby="categorias">
       <h2 id="categorias">Categorías destacadas</h2>
       <p>Explora nuestras áreas de formación más solicitadas:</p>
 
-      <div>
+      <div class="grid-2x2">
         <article>
           <h3>Tecnología</h3>
           <p>
@@ -98,8 +89,6 @@
       </div>
     </section>
 
-    <hr>
-
     <section aria-labelledby="empresas">
       <h2 id="empresas">Empresas que confían en nosotros</h2>
 
@@ -110,25 +99,71 @@
 
       <ul>
         <li>
-          <img src="./images/gmv.png" alt="Logotipo de gmv" width="256" height="256">
+          <img src="./images/gmv.png" alt="Logotipo de gmv" class="square-img">
           <strong>gmv</strong> — formación en competencias digitales y desarrollo web.
         </li>
 
         <li>
-          <img src="./images/liferay.png" alt="Logotipo de Liferay" width="256" height="256">
+          <img src="./images/liferay.png" alt="Logotipo de Liferay" class="square-img">
           <strong>Liferay</strong> — cursos orientados a redes, sistemas y seguridad.
         </li>
 
         <li>
-          <img src="./images/wallapop.jpg" alt="Logotipo de Wallapop" width="256" height="256">
+          <img src="./images/wallapop.jpg" alt="Logotipo de Wallapop" class="square-img">
           <strong>Wallapop</strong> — apoyo en contenidos de análisis de datos y marketing digital.
         </li>
 
         <li>
-          <img src="./images/bq.png" alt="Logotipo de bq" width="256" height="256">
+          <img src="./images/bq.png" alt="Logotipo de bq" class="square-img">
           <strong>bq</strong> — formación en herramientas profesionales y entornos cloud.
         </li>
       </ul>
+    </section>
+
+    <section aria-labelledby="agradecimientos">
+      <h2 id="agradecimientos">Agradecimientos</h2>
+
+      <p>
+        El equipo de <strong>Formación Global Online</strong> desea expresar su más sincero agradecimiento
+        a todas las personas y entidades que han contribuido, directa o indirectamente, al desarrollo
+        de este proyecto educativo.
+      </p>
+
+      <p>
+        En primer lugar, agradecemos al profesorado y al personal docente que, con su experiencia,
+        dedicación y compromiso con la enseñanza, han participado en la definición de los contenidos,
+        la estructura de los cursos y el enfoque metodológico de la plataforma. Su conocimiento ha sido
+        fundamental para garantizar una formación rigurosa, actualizada y orientada a las necesidades
+        reales del alumnado.
+      </p>
+
+      <p>
+        Asimismo, queremos reconocer el esfuerzo del alumnado, cuya motivación por aprender y mejorar
+        sus competencias profesionales ha servido como principal motor para el diseño de esta plataforma.
+        Sus inquietudes, objetivos y diversidad de perfiles han inspirado una propuesta formativa flexible,
+        accesible y adaptada a distintos niveles de conocimiento.
+      </p>
+
+      <p>
+        También extendemos nuestro agradecimiento a las instituciones educativas y a los profesionales
+        del ámbito de la formación que han aportado ideas, referencias y buenas prácticas durante el
+        proceso de conceptualización del proyecto. Sus aportaciones han permitido sentar una base sólida
+        sobre la que seguir construyendo futuras mejoras y ampliaciones.
+      </p>
+
+      <p>
+        Por último, este proyecto no habría sido posible sin el marco académico en el que se desarrolla,
+        que fomenta el aprendizaje práctico, la investigación autónoma y la aplicación de conocimientos
+        técnicos en contextos reales. La realización de este prototipo ha supuesto una oportunidad para
+        integrar contenidos teóricos con habilidades prácticas, reforzando la importancia de una formación
+        continua y de calidad en un entorno digital en constante evolución.
+      </p>
+
+      <p>
+        A todas las personas que han formado parte de este proceso, nuestro más sincero agradecimiento.
+        Este proyecto es solo el primer paso de una plataforma en crecimiento, concebida para seguir
+        evolucionando y mejorando en futuras fases de desarrollo.
+      </p>
     </section>
   </main>
 

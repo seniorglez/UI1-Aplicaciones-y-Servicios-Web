@@ -8,20 +8,18 @@
   <meta name="keywords" content="listado de cursos, cursos online, tecnología, diseño, empresa, idiomas">
   <meta name="description"
     content="Listado de cursos disponibles en Formación Global Online con enlaces a sus páginas de detalle.">
-  <meta name="author" content="Nombre Apellidos">
+  <meta name="author" content="Diego Dominguez">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header>
     <div>
-      <a href="index.html">
-        <img src="./images/logo_ui1.png" alt="Logotipo de Formación Global Online" width="256" height="256">
-      </a>
       <h1>Cursos</h1>
       <p>Consulta el catálogo de cursos y accede al detalle de cada formación.</p>
     </div>
 
-    <nav aria-label="Navegación principal">
+    <nav class="top-nav" aria-label="Navegación principal">
       <ul>
         <li><a href="index.html">Portada</a></li>
         <li><a href="cursos.html" aria-current="page">Cursos</a></li>
@@ -37,93 +35,63 @@
 
       <section id="tecnologia" aria-labelledby="tecnologia-title">
         <h3 id="tecnologia-title">Tecnología</h3>
+        <div class="grid-3">
+          <article class="course-card">
+            <h4><a href="cursos/curso-fullstack.html">Desarrollo Web Full Stack</a></h4>
+            <img src="./images/full.png" alt="Imagen del curso Desarrollo Web Full Stack" class="square-img">
+          </article>
 
-        <article>
-          <h4><a href="cursos/curso-fullstack.html">Desarrollo Web Full Stack</a></h4>
-          <img src="./images/full.png" alt="Imagen del curso Desarrollo Web Full Stack" width="256" height="256">
-          <ul>
-            <li><strong>Categoría:</strong> Tecnología</li>
-            <li><strong>Nivel:</strong> Intermedio</li>
-            <li><strong>Duración estimada:</strong> 80 horas</li>
-          </ul>
-          <p>
-            Aprende a construir aplicaciones web completas: frontend, backend y bases de datos.
-          </p>
-        </article>
+          <article class="course-card">
+            <h4><a href="cursos/curso-data.html">Introducción al Análisis de Datos</a></h4>
+            <img src="./images/data.png" alt="Imagen del curso Introducción al Análisis de Datos" class="square-img">
+          </article>
 
-        <article>
-          <h4><a href="cursos/curso-data.html">Introducción al Análisis de Datos</a></h4>
-          <img src="./images/data.png" alt="Imagen del curso Introducción al Análisis de Datos" width="256"
-            height="256">
-          <ul>
-            <li><strong>Categoría:</strong> Tecnología</li>
-            <li><strong>Nivel:</strong> Básico</li>
-            <li><strong>Duración estimada:</strong> 45 horas</li>
-          </ul>
-          <p>
-            Conceptos clave de datos, visualización y toma de decisiones basada en métricas.
-          </p>
-        </article>
+          <article class="course-card">
+            <h4><a href="cursos/curso-java.html">Programación en Java</a></h4>
+            <img src="./images/java.svg" alt="Imagen del curso Introducción al Análisis de Datos" class="square-img">
+          </article>
+        </div>
       </section>
 
       <hr>
 
       <section id="diseno" aria-labelledby="diseno-title">
         <h3 id="diseno-title">Diseño</h3>
+        <div class="grid-3">
 
-        <article>
-          <h4><a href="cursos/curso-ux.html">UX/UI: Diseño de Experiencia de Usuario</a></h4>
-          <img src="./images/ux.png" alt="Imagen del curso UX/UI: Diseño de Experiencia de Usuario" width="256"
-            height="256">
-          <ul>
-            <li><strong>Categoría:</strong> Diseño</li>
-            <li><strong>Nivel:</strong> Intermedio</li>
-            <li><strong>Duración estimada:</strong> 60 horas</li>
-          </ul>
-          <p>
-            Aprende a investigar, prototipar y validar soluciones centradas en el usuario.
-          </p>
-        </article>
+          <article class="course-card">
+            <h4><a href="cursos/curso-ux.html">UX/UI: Diseño de Experiencia de Usuario</a></h4>
+            <img src="./images/ux.png" alt="Imagen del curso UX/UI: Diseño de Experiencia de Usuario"
+              class="square-img">
+          </article>
+        </div>
       </section>
 
       <hr>
 
       <section id="empresa" aria-labelledby="empresa-title">
         <h3 id="empresa-title">Empresa</h3>
+        <div class="grid-3">
 
-        <article>
-          <h4><a href="cursos/curso-marketing.html">Marketing Digital para Principiantes</a></h4>
-          <img src="./images/marketing.png" alt="Imagen del curso Marketing Digital para Principiantes" width="256"
-            height="256">
-          <ul>
-            <li><strong>Categoría:</strong> Empresa</li>
-            <li><strong>Nivel:</strong> Básico</li>
-            <li><strong>Duración estimada:</strong> 35 horas</li>
-          </ul>
-          <p>
-            Fundamentos de marketing online: contenidos, SEO, redes sociales y campañas.
-          </p>
-        </article>
+          <article class="course-card">
+            <h4><a href="cursos/curso-marketing.html">Marketing Digital para Principiantes</a></h4>
+            <img src="./images/marketing.png" alt="Imagen del curso Marketing Digital para Principiantes"
+              class="square-img">
+          </article>
+        </div>
       </section>
 
       <hr>
 
       <section id="idiomas" aria-labelledby="idiomas-title">
         <h3 id="idiomas-title">Idiomas</h3>
-
-        <article>
-          <h4><a href="cursos/curso-ingles-b2.html">Inglés B2: Comunicación Profesional</a></h4>
-          <img src="./images/ingles.png" alt="Imagen del curso Inglés B2: Comunicación Profesional" width="256"
-            height="256">
-          <ul>
-            <li><strong>Categoría:</strong> Idiomas</li>
-            <li><strong>Nivel:</strong> Avanzado</li>
-            <li><strong>Duración estimada:</strong> 50 horas</li>
-          </ul>
-          <p>
-            Mejora tu fluidez y tu precisión para reuniones, presentaciones y correo formal.
-          </p>
-        </article>
+        <div class="grid-3">
+          <article class="course-card">
+            <h4><a href="cursos/curso-ingles-b2.html">Inglés B2: Comunicación Profesional</a></h4>
+            <img src="./images/ingles.png" alt="Imagen del curso Inglés B2: Comunicación Profesional"
+              class="square-img">
+          </article>
+        </div>
       </section>
     </section>
   </main>
