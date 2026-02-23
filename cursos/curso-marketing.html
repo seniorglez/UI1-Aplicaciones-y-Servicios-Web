@@ -1,90 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marketing Digital para Principiantes | Formación Global Online</title>
-  <meta name="keywords" content="marketing digital, SEO, redes sociales, contenidos, campañas">
-  <meta name="description" content="Detalle del curso Marketing Digital: temario, profesor, duración y requisitos.">
-  <meta name="author" content="Diego Dominguez">
+  <meta name="description" content="Detalle del curso Marketing Digital para Principiantes en Formación Global Online.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-  <header>
-    <div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Menú principal">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="../index.html">Formación Global Online</a>
 
-      <h1>Detalle del curso</h1>
-      <p>Información completa del curso seleccionado.</p>
-    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navFGO"
+        aria-controls="navFGO" aria-expanded="false" aria-label="Mostrar/ocultar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <nav class="top-nav" aria-label="Navegación principal">
-      <ul>
-        <li><a href="../index.html">Portada</a></li>
-        <li><a href="../cursos.html">Cursos</a></li>
-        <li><a href="../profesorado.html">Profesorado</a></li>
-      </ul>
-    </nav>
-    <hr>
-  </header>
+      <div class="collapse navbar-collapse" id="navFGO">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Portada</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../profesorado.html">Profesorado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contacto.html">Contacto</a>
+          </li>
 
-  <main class="course-detail">
-    <div class="course-media">
-      <img src="../images/marketing.png" alt="Imagen del curso Marketing Digital para Principiantes" class="square-img">
-    </div>
-    <article class="course-info">
-      <header>
-        <h2>Marketing Digital para Principiantes</h2>
-
-        <p><strong>Categoría:</strong> Empresa</p>
-        <p><strong>Nivel:</strong> Básico</p>
-        <p><strong>Duración:</strong> 35 horas</p>
-      </header>
-
-      <section aria-labelledby="descripcion">
-        <h3 id="descripcion">Descripción general</h3>
-        <p>
-          Curso práctico para comprender los canales de marketing online, definir objetivos
-          y crear acciones medibles con enfoque en resultados.
-        </p>
-      </section>
-
-      <section aria-labelledby="profesor">
-        <h3 id="profesor">Profesor/a responsable</h3>
-        <p><strong>Daniel Ortega</strong> — Consultor de marketing y estrategia digital.</p>
-      </section>
-
-      <section aria-labelledby="temario">
-        <h3 id="temario">Temario</h3>
-        <ol>
-          <li>Fundamentos del marketing digital</li>
-          <li>Marca, público objetivo y propuesta de valor</li>
-          <li>Introducción a SEO y contenidos</li>
-          <li>Redes sociales: estrategia y calendario</li>
-          <li>Campañas básicas y medición</li>
-        </ol>
-      </section>
-
-      <section aria-labelledby="requisitos">
-        <h3 id="requisitos">Requisitos previos</h3>
-        <ul>
-          <li>No se requieren conocimientos previos</li>
-          <li>Interés por comunicación y estrategia</li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cursos individuales
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="curso-fullstack.html">Full Stack</a></li>
+              <li><a class="dropdown-item" href="curso-data.html">Análisis de datos</a></li>
+              <li><a class="dropdown-item" href="curso-java.html">Java</a></li>
+              <li><a class="dropdown-item" href="curso-ux.html">UX/UI</a></li>
+              <li><a class="dropdown-item active" href="curso-marketing.html" aria-current="page">Marketing</a></li>
+              <li><a class="dropdown-item" href="curso-ingles-b2.html">Inglés B2</a></li>
+            </ul>
+          </li>
         </ul>
-      </section>
 
-      <footer>
-        <hr>
-        <p><a href="../cursos.html">Volver al listado de cursos</a></p>
-      </footer>
-    </article>
+        <div class="d-flex align-items-center gap-2">
+          <span class="text-white-50 small d-none d-lg-inline">Tamaño texto</span>
+          <div class="btn-group" role="group" aria-label="Controles de tamaño de texto">
+            <button id="btnFontMinus" type="button" class="btn btn-outline-light btn-sm">A-</button>
+            <button id="btnFontReset" type="button" class="btn btn-outline-light btn-sm">A</button>
+            <button id="btnFontPlus" type="button" class="btn btn-outline-light btn-sm">A+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="fgo-main">
+    <header class="bg-body-tertiary py-4 border-bottom">
+      <div class="container">
+        <h1 class="display-6 mb-1">Marketing Digital para Principiantes</h1>
+        <p class="lead mb-0">
+          <span class="badge text-bg-primary">Empresa</span>
+          <span class="ms-2 text-body-secondary">Nivel: Iniciación</span>
+        </p>
+      </div>
+    </header>
+
+    <div class="container mt-4">
+      <div class="row g-4">
+
+        <aside class="col-12 col-lg-5" aria-label="Resumen del curso">
+          <div class="card shadow-sm">
+            <img src="../images/marketing.png" class="card-img-top fgo-card-img"
+              alt="Imagen del curso Marketing Digital para Principiantes">
+
+            <div class="card-body">
+              <p class="card-text">
+                Aprende los fundamentos del marketing digital: estrategia online,
+                redes sociales, SEO/SEM y analítica para impulsar tu marca o negocio.
+              </p>
+
+              <dl class="row mb-3">
+                <dt class="col-4">Categoría</dt>
+                <dd class="col-8 mb-2">Empresa</dd>
+
+                <dt class="col-4">Nivel</dt>
+                <dd class="col-8 mb-2">Iniciación</dd>
+
+                <dt class="col-4">Duración</dt>
+                <dd class="col-8 mb-0">40 horas</dd>
+              </dl>
+
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-secondary" type="button" onclick="window.print()">
+                  Imprimir página
+                </button>
+                <a class="btn btn-primary" href="../cursos.html">Volver al catálogo</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <article class="col-12 col-lg-7" aria-label="Información del curso">
+          <div class="card shadow-sm">
+            <div class="card-body">
+
+              <section aria-labelledby="descripcion" class="mb-4">
+                <h2 id="descripcion" class="h5">Descripción general</h2>
+                <p class="mb-0">
+                  Este curso introduce los conceptos clave del marketing digital
+                  y cómo aplicarlos en entornos reales. Aprenderás a diseñar
+                  estrategias básicas, identificar públicos objetivo y medir resultados.
+                </p>
+              </section>
+
+              <section aria-labelledby="profesor" class="mb-4">
+                <h2 id="profesor" class="h5">Profesor/a responsable</h2>
+                <p class="mb-0">
+                  <strong>Daniel Ortega</strong> — Especialista en marketing digital,
+                  campañas online y estrategia de marca.
+                </p>
+              </section>
+
+              <section aria-labelledby="temario" class="mb-4">
+                <h2 id="temario" class="h5">Temario</h2>
+                <ol class="mb-0">
+                  <li>Fundamentos del marketing digital</li>
+                  <li>Redes sociales y creación de contenido</li>
+                  <li>SEO y posicionamiento en buscadores</li>
+                  <li>Publicidad online (SEM y redes sociales)</li>
+                  <li>Email marketing y automatización básica</li>
+                  <li>Analítica digital y métricas clave</li>
+                </ol>
+              </section>
+
+              <section aria-labelledby="requisitos">
+                <h2 id="requisitos" class="h5">Requisitos previos</h2>
+                <ul class="mb-0">
+                  <li>No se requieren conocimientos previos</li>
+                  <li>Interés en comunicación y entorno digital</li>
+                  <li>Acceso a ordenador y conexión a internet</li>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <hr>
-    <p>&copy; 2026 Formación Global Online</p>
+  <footer class="fgo-footer bg-light border-top mt-5">
+    <div class="container py-4">
+      <div class="row g-3 align-items-start">
+        <div class="col-12 col-md-6">
+          <h2 class="h6 mb-2">Administración</h2>
+          <p class="mb-1"><strong>Administrador:</strong> Diego Domínguez</p>
+          <p class="mb-0"><strong>Email:</strong> admin@formacionglobalonline.example</p>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h2 class="h6 mb-2">Información legal</h2>
+          <ul class="list-unstyled mb-1">
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de accesibilidad</a></li>
+          </ul>
+          <p class="mb-0">
+            <strong>Fecha y hora:</strong>
+            <span id="fechaHora" aria-live="polite">--/--/---- --:--:--</span>
+          </p>
+        </div>
+      </div>
+
+      <hr class="my-3">
+      <p class="mb-0 small text-body-secondary">
+        &copy; 2026 Formación Global Online
+      </p>
+    </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/app.js"></script>
+
 </body>
 
 </html>

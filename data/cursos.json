@@ -1,0 +1,56 @@
+[
+  {
+    "id": "fullstack",
+    "titulo": "Desarrollo Web Full Stack",
+    "categoria": "Programación",
+    "nivel": "Intermedio",
+    "imagen": "images/full.png",
+    "resumen": "Aprende a crear aplicaciones web completas: HTML, CSS, JavaScript, backend y bases de datos.",
+    "detalle": "cursos/curso-fullstack.html"
+  },
+  {
+    "id": "data",
+    "titulo": "Introducción al Análisis de Datos",
+    "categoria": "Empresa",
+    "nivel": "Iniciación",
+    "imagen": "images/data.png",
+    "resumen": "Fundamentos de análisis de datos, visualización y toma de decisiones basada en datos.",
+    "detalle": "cursos/curso-data.html"
+  },
+  {
+    "id": "java",
+    "titulo": "Programación en Java",
+    "categoria": "Programación",
+    "nivel": "Intermedio",
+    "imagen": "images/java.svg",
+    "resumen": "Bases sólidas de Java: POO, colecciones, excepciones y buenas prácticas para proyectos reales.",
+    "detalle": "cursos/curso-java.html"
+  },
+  {
+    "id": "ux",
+    "titulo": "UX/UI: Diseño de Experiencia de Usuario",
+    "categoria": "Diseño",
+    "nivel": "Iniciación",
+    "imagen": "images/ux.png",
+    "resumen": "Diseña productos digitales centrados en el usuario: research, wireframes, UI y prototipado.",
+    "detalle": "cursos/curso-ux.html"
+  },
+  {
+    "id": "marketing",
+    "titulo": "Marketing Digital para Principiantes",
+    "categoria": "Empresa",
+    "nivel": "Iniciación",
+    "imagen": "images/marketing.png",
+    "resumen": "Estrategia digital, SEO/SEM, redes sociales y analítica para empezar con buen pie.",
+    "detalle": "cursos/curso-marketing.html"
+  },
+  {
+    "id": "ingles-b2",
+    "titulo": "Inglés B2: Comunicación Profesional",
+    "categoria": "Idiomas",
+    "nivel": "B2",
+    "imagen": "images/ingles.png",
+    "resumen": "Mejora tu comunicación en inglés en contextos laborales: reuniones, emails y presentaciones.",
+    "detalle": "cursos/curso-ingles-b2.html"
+  }
+]

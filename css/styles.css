@@ -1,257 +1,32 @@
-/* =========================
-   Base
-========================= */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+:root {
+  --fgo-font-scale: 1;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  background-color: #f5f6f8;
-  color: #1f2937;
+  padding-top: 72px;
 }
 
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 90px 16px 32px;
+/* navbar fixed-top */
+
+main.fgo-main {
+  font-size: calc(1rem * var(--fgo-font-scale));
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.fgo-card-img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #f1f3f5;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #d6dbe3;
-  margin: 24px 0;
-}
-h1, h2, h3, h4 {
-  line-height: 1.2;
-  margin-top: 0;
-}
-
-section > h2 {
-  margin-bottom: 12px;
-}
-
-p {
-  margin-top: 0;
-}
-
-.square-img {
-  width: 256;
-  height: 256;
-}
-
-/* =========================
-   Header + Banner
-========================= */
-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #d6dbe3;
-  margin-top: 56px; /* mismo alto que el nav */
-}
-
-header > div {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-.banner {
-  width: 100%;
-  margin-top: 56px; /* mismo alto que el nav */
-  max-height: 240px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  display: block;
-}
-
-
-.top-nav{
-  position: fixed;
-  top: 0;   
-  left: 0;
-  right: 0;
-  height: 56px;
-  background-color: #111827;
-  z-index: 999;
-  border-bottom: 1px solid #0b1220;
-}
-
-.top-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 12px 16px;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.top-nav a {
-  color: #ffffff;
+.fgo-footer a {
   text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  display: inline-block;
 }
 
-.top-nav a:hover {
-  background-color: #1f2937;
+.fgo-footer a:hover {
+  text-decoration: underline;
 }
 
-.top-nav a[aria-current="page"] {
-  background-color: #2563eb;
-}
-
-
-/* =========================
-   Tarjetas
-========================= */
-article {
-  background-color: #ffffff;
-  border: 1px solid #d6dbe3;
-  border-radius: 12px;
-  padding: 14px;
-}
-
-/* =========================
-   Portada: grid 2x2
-========================= */
-.grid-2x2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-/* =========================
-   Listado cursos: grid 3
-========================= */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.course-card a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.course-card img {
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.course-card h3 {
-  margin: 0;
-  font-size: 1.05rem;
-}
-
-/* =========================
-   Curso individual: 2 columnas
-========================= */
-.course-detail {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 18px;
-  align-items: start;
-}
-
-.course-media img {
-  border-radius: 12px;
-  border: 1px solid #d6dbe3;
-}
-
-.course-info {
-  background-color: #ffffff;
-  border: 1px solid #d6dbe3;
-  border-radius: 12px;
-  padding: 14px;
-}
-
-.course-info ul,
-.course-info ol {
-  padding-left: 18px;
-}
-
-/* =========================
-   Tabla profesorado
-========================= */
-.staff-table {
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #ffffff;
-  border: 1px solid #d6dbe3;
-}
-
-.staff-table caption {
-  padding: 10px;
-  font-weight: bold;
-}
-
-.staff-table th,
-.staff-table td {
-  border: 1px solid #d6dbe3;
-  padding: 10px;
-  text-align: left;
-}
-
-.staff-table thead th {
-  background-color: #111827;
-  color: #ffffff;
-}
-
-.staff-table tbody tr:hover {
-  background-color: #e8f0ff;
-}
-
-/* =========================
-   Footer
-========================= */
-footer {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 16px;
-  color: #374151;
-}
-
-/* =========================
-   Responsive
-========================= */
-@media (max-width: 900px) {
-  .grid-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .course-detail {
-    grid-template-columns: 1fr;
-  }
-
-  .staff-table {
-    width: 95%;
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-2x2 {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
+.fgo-sortable {
+  cursor: pointer;
+  user-select: none;
 }
